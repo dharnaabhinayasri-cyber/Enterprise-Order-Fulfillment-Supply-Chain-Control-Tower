@@ -1,5 +1,2 @@
-data/raw/
-data/processed/*.csv
-*.xlsx
-*.xls
-~
+# data/raw/
+# data/processed/*.csv

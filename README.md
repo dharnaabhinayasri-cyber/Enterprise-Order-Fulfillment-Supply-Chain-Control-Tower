@@ -1,48 +1,46 @@
-# Enterprise Order Fulfillment & Supply Chain Performance Control Tower
+# Enterprise Order Fulfillment & Supply Chain Analytics
 
-> **Flagship End-to-End Data Analytics Project | Python • MySQL • Power BI • DAX • Excel**
+## Executive Summary
 
-This project demonstrates how raw order-line data can be transformed into **decision-ready intelligence** for supply chain teams. It integrates **Python for data preparation, MySQL for advanced SQL analytics, and Power BI for interactive dashboards** into a single enterprise-style control tower.
+This project analyses order fulfillment, delivery performance, sales, profitability, and logistics exceptions using the DataCo Supply Chain dataset.
 
-## 🎯 Business Problem
-Supply chain managers face critical questions:
-- How many orders are processed and delivered on time?
-- Which regions and shipping modes create operational risk?
-- Which products and categories drive revenue and profit?
-- How do discounts affect profitability?
-- Which customers contribute the most value?
-- Which orders require immediate operational attention?
-- How do sales and fulfillment performance change over time?
+The workflow combines Python and Pandas for data preparation and feature engineering, MySQL for data validation and business analysis, and Power BI with DAX for interactive operational reporting.
 
-This project builds a **5-page Supply Chain Control Tower** to answer these questions.
+The analysis is designed to help supply chain stakeholders answer five key questions:
 
-## 📊 Dataset
-- **Source:** DataCo Supply Chain Dataset  
-- **Size:** 180,519 order-line records, 65,752 distinct orders, 20,652 customers, 118 products, 58 columns  
-- **Grain:** One row = one order item / order line  
-- ⚠️ Orders, customers, and products require **DISTINCTCOUNT** to avoid double counting.
+1. How consistently are orders delivered on time?
+2. Which regions and shipping modes have higher delivery-delay exposure?
+3. Which products and categories generate revenue and profit?
+4. How do discounts relate to profitability?
+5. Which delayed or at-risk orders should be prioritized for investigation?
 
-## 🛠️ Technology Stack
-| Tool          | Purpose                                                 |
-|---------------|---------------------------------------------------------|
-| Python        | Data cleaning, preprocessing, feature engineering       |
-| Pandas        | Data manipulation and validation                        |
-| MySQL         | Data quality checks, advanced SQL analytics             |
-| Power BI      | Interactive dashboards                                  |
-| DAX           | KPI calculations, time intelligence                     |
-| Power Query   | Data transformation                                     |
-| Excel         | Data inspection                                         |
-| GitHub        | Version control, portfolio presentation                 |
+**Dataset grain:** One row represents an order line, not necessarily one unique order.
 
-## 🔄 Workflow
-Raw Data
-   ↓
-Python Cleaning & Feature Engineering
-   ↓
-MySQL Validation & Advanced SQL Analytics
-   ↓
-Power BI Data Model & DAX
-   ↓
-5-Page Control Tower
-   ↓
-Operational Insights & Exception Management
+**Tools:** Python, Pandas, MySQL, Power Query, Power BI, DAX, Excel.
+
+**Deliverable:** A multi-page supply chain analytics report covering executive KPIs, fulfillment performance, commercial analysis, regional logistics, and exception management.
+
+## Analytical Approach
+
+Raw data → Data-quality checks → Cleaning and feature engineering → SQL analysis → Power BI data modeling → KPI validation → Business recommendations.
+
+## Key Operational Findings
+
+1. **Delivery Performance:** The observed on-time delivery rate was [X%] across [N] eligible orders during [reporting period].
+
+2. **Delay Concentration:** [Region or shipping mode] had the highest observed delay rate ([X%]), based on [N] eligible orders.
+
+3. **Commercial Performance:** [Category] generated the highest sales, while [category or sub-category] had the weakest profit margin.
+
+4. **Discount Exposure:** Orders in the [discount band] segment had a profit margin of [X%], compared with [Y%] in the comparison segment.
+
+5. **Operational Priorities:** [N] orders met the project's exception criteria and were prioritized according to [actual prioritization rule].
+
+## Recommended Actions
+
+- Investigate recurring delivery delays in the segments with the highest validated delay rates.
+- Review shipping-mode performance alongside delivery volume and order mix.
+- Monitor profitability alongside sales when evaluating commercial performance.
+- Establish an exception review process and track operational KPIs over time.
+
+*All reported findings should be calculated from the validated dataset. Observational patterns do not, by themselves, establish causation.*
